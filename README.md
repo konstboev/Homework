@@ -1,2 +1,2 @@
-# Front-end Pro courses, IT school "hillel".
+# Front-end Pro courses, IT School "Hillel".
 Homework in the courses
