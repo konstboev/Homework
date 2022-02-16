@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  margin: 0 auto;
+}
+
+.button_wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 18%;
+}
+
+.button {
+  border-color: #3498db;
+  color: darkgray;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  transition: all 150ms ease-in-out;
+  width: 150px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active,
+.button:hover {
+  box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+
+.modalwin {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: dimgray;
+  display: none;
+}
+
+.modalwin_content {
+  border-radius: 30px;
+  background-color: whitesmoke;
+  margin: 150px auto;
+  padding: 20px;
+  border: 1px solid darkgray;
+  width: 50%;
+  z-index: 15;
+}
+
+.modalwin_close {
+  color: red;
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: -25px;
+  left: 97%;
+}
+
+.modalwin_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

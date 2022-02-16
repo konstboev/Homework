@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  margin: 0 auto;
+}
+
+.accordion {
+  font-family: "Poppins", sans-serif;
+  background-color: beige;
+  color: #444;
+  cursor: pointer;
+  padding: 2%;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.panel {
+  text-align: right;
+  display: none;
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.active,
+.accordion:hover {
+  background-color: burlywood;
+}
